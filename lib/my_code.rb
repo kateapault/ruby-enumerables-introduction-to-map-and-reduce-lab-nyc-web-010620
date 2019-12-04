@@ -38,8 +38,10 @@ end
 def reduce_to_total(source_array, starting_point=0)
   total = 0
   i = starting_point
+  print i
   while i < source_array.length do
     total += source_array[i]
+    print "total = #{total}"
     i += 1
   end
   total
