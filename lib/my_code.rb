@@ -36,11 +36,17 @@ end
 ##########################
 
 def reduce_to_total(source_array, starting_point)
-  
+  total = 0
+  for num in source_array do
+  total += num  
+  end
+  total
 end
 
 def reduce_all_to_true(source_array)
-  
+  for item in source_array do
+    if item.true? == false
+  end
 end
 
 def reduce_any_to_true(source_array)
