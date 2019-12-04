@@ -45,8 +45,11 @@ end
 
 def reduce_all_to_true(source_array)
   for item in source_array do
-    if item.true? == false
+    if not item
+      return false
+    end
   end
+  true
 end
 
 def reduce_any_to_true(source_array)
