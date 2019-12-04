@@ -43,7 +43,7 @@ def reduce_to_total(source_array, starting_point)
   total
 end
 
-def reduce_all_to_true(source_array)
+def reduce_to_all_true(source_array)
   for item in source_array do
     if not item
       return false
@@ -52,7 +52,7 @@ def reduce_all_to_true(source_array)
   true
 end
 
-def reduce_any_to_true(source_array)
+def reduce_to_any_true(source_array)
   for item in source_array do
     if item
       return true
