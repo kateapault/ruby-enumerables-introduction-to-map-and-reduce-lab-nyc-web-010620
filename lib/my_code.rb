@@ -35,10 +35,11 @@ end
 #### REDUCE-Y METHODS ####
 ##########################
 
-def reduce_to_total(source_array, starting_point)
+def reduce_to_total(source_array, starting_point=0)
   total = 0
-  for num in source_array do
-  total += num  
+  i = starting_point
+  for source_array[i...source_array.last] do
+    total += source_array[i]  
   end
   total
 end
